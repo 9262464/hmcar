@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      force-request: true
+      enabled: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.14.154.181:3306/hm?serverTimezone=UTC&characterEncoding=UTF8
+    username: root
+    password: 906913
+    type: com.alibaba.druid.pool.DruidDataSource
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+mybatis-plus:
+  mapper-locations: classpath*:com/ttes/byd_car/mapper/xml/*.xml
+  type-aliases-package: com.hm.hmcar.entity
