@@ -16,13 +16,13 @@ import springfox.documentation.spring.web.plugins.Docket;
 @Configuration
 public class SwaggerConfig {
     public ApiInfo createApi(){
-        return new ApiInfoBuilder().title("比亚迪股份有限公司").
+        return new ApiInfoBuilder().title("海马股份有限公司").
                 description("打造汽车王国").
                 contact(new Contact("cyx","http://1000phone.com","1092377640@qq.com")).build();
     }
     @Bean  //等价于 <bean>标签
     public Docket createDoc(){
         return new Docket(DocumentationType.SWAGGER_2).apiInfo(createApi()).select().
-                apis(RequestHandlerSelectors.basePackage("com.ttes.byd_car.web")).build();
+                apis(RequestHandlerSelectors.basePackage("com.hm.hmcar.controller")).build();
     }
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.hmcar.mapper.ListcarMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.hm.hmcar.entity.Listcar">
+		<id column="id" property="id" />
+		<result column="carimgurl" property="carimgurl" />
+		<result column="pricemin" property="pricemin" />
+		<result column="pricemax" property="pricemax" />
+		<result column="content" property="content" />
+		<result column="carname" property="carname" />
+	</resultMap>
+
+</mapper>
