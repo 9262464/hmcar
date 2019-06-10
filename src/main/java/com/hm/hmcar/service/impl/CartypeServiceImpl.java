@@ -1,9 +1,10 @@
 package com.hm.hmcar.service.impl;
 
-import com.hm.hmcar.entity.Cartype;
+
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hm.hmcar.dao.CartypeMapper;
+import com.hm.hmcar.entity.Cartype;
 import com.hm.hmcar.service.CartypeService;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**

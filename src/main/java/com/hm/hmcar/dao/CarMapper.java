@@ -1,7 +1,7 @@
 package com.hm.hmcar.dao;
 
 import com.hm.hmcar.entity.Car;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 import java.io.Serializable;
 import java.util.List;
