@@ -11,4 +11,86 @@
 		<result column="carimgurl" property="carimgurl" />
 	</resultMap>
 
+	<insert id="save" parameterType="com.hm.hmcar.vo.VCat">
+		INSERT into car
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+		<if test="id != null">
+			id,
+		</if>
+		<if test="name != null">
+			name,
+		</if>
+		<if test="price != null">
+			price,
+		</if>
+		<if test="model != null">
+			model,
+		</if>
+		<if test="type != null">
+			type,
+		</if>
+		<if test="seriesname != null">
+			seriesname,
+		</if>
+		<if test="atvFlag != null">
+			typeid,
+		</if>
+		<if test="carimgurl != null">
+			carimgurl,
+		</if>
+		<if test="pricemin != null">
+			pricemin,
+		</if>
+		<if test="pricemax != null">
+			pricemax,
+		</if>
+		<if test="content != null">
+			content,
+		</if>
+		<if test="carname != null">
+			carname,
+		</if>
+	</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="name != null">
+				#{name,jdbcType=VARCHAR},
+			</if>
+			<if test="price != null">
+				#{price,jdbcType=INTEGER},
+			</if>
+			<if test="model != null">
+				#{model,jdbcType=VARCHAR},
+			</if>
+			<if test="type != null">
+				#{type,jdbcType=VARCHAR},
+			</if>
+			<if test="seriesname != null">
+				#{seriesname,jdbcType=VARCHAR},
+			</if>
+			<if test="typeid != null">
+				#{typeid,jdbcType=INTEGER},
+			</if>
+			<if test="carimgurl != null">
+				#{carimgurl,jdbcType=VARCHAR},
+			</if>
+			<if test="pricemin != null">
+				#{pricemin,jdbcType=VARCHAR},
+			</if>
+			<if test="pricemax != null">
+				#{pricemax,jdbcType=VARCHAR},
+			</if>
+			<if test="content != null">
+				#{content,jdbcType=VARCHAR},
+			</if>
+			<if test="carname != null">
+				#{carname,jdbcType=VARCHAR},
+			</if>
+		</trim>
+
+	</insert>
+
 </mapper>
+

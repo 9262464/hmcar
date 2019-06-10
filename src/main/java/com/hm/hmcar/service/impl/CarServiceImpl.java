@@ -4,7 +4,11 @@ import com.hm.hmcar.dao.CarMapper;
 import com.hm.hmcar.entity.Car;
 import com.hm.hmcar.service.CarService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.hm.hmcar.vo.VCat;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -16,5 +20,18 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class CarServiceImpl extends ServiceImpl<CarMapper, Car> implements CarService {
-	
+
+    @Autowired(required = false)
+    private CarMapper carMapper;
+
+    @Override
+    public List<VCat> selectName() {
+
+        return carMapper.selectName();
+    }
+
+    @Override
+    public void save(VCat vCat) {
+        carMapper.save(vCat);
+    }
 }

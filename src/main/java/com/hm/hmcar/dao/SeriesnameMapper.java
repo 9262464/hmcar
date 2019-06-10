@@ -1,7 +1,10 @@
 package com.hm.hmcar.dao;
 
+import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.hm.hmcar.entity.Seriesname;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +15,6 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * @since 2019-06-09
  */
 public interface SeriesnameMapper extends BaseMapper<Seriesname> {
-
+    @Override
+    List<Seriesname> selectList(Wrapper<Seriesname> wrapper);
 }

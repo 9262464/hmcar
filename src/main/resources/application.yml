@@ -17,5 +17,5 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
 mybatis-plus:
-  mapper-locations: classpath*:com/hm/hmcar/mapper/xml/*.xml
+  mapper-locations: classpath*:mapper/xml/*.xml
   type-aliases-package: com.hm.hmcar.entity
