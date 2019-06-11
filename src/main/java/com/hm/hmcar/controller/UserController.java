@@ -34,6 +34,7 @@ public class UserController {
     @PostMapping("/user/add.do")
     public JsonBean zhuce(@ApiParam(name = "user",value = "用户相关的键值对") User user,HttpSession session){
         userService.zhuce(user);
+
         session.setAttribute("user",user);
         return JsonBean.setOK("注册成功",user);
     }

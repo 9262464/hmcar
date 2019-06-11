@@ -1,7 +1,7 @@
 package com.hm.hmcar.dao;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.hm.hmcar.entity.Cartype;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 /**
  * <p>
