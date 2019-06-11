@@ -3,6 +3,7 @@ package com.hm.hmcar.dao;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.hm.hmcar.entity.Listcar;
 import com.hm.hmcar.vo.CarVo;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
@@ -17,10 +18,10 @@ import java.util.List;
  */
 public interface ListcarMapper extends BaseMapper<Listcar> {
 
-    @GetMapping("select * from listcar where id=#{id}")
+    @Select("select * from listcar where id=#{id}")
     List<Listcar> selectById(Integer id);
 
-    @GetMapping("select c.id,c.content, c.name,c.price,m.model,t.type,v.vintage from car c\n" +
+    @Select("select c.id,c.content, c.name,c.price,m.model,t.type,v.vintage from car c\n" +
             "\t\t\tINNER JOIN carmodel m\n" +
             "\t\t\ton c.modelid=m.modelid\n" +
             "\t\t\tINNER JOIN cartype t\n" +

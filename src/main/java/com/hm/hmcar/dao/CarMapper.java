@@ -1,7 +1,10 @@
 package com.hm.hmcar.dao;
 
-import com.hm.hmcar.entity.Car;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.hm.hmcar.entity.Car;
+import com.hm.hmcar.vo.VCat;
+
+import java.util.List;
 
 
 /**
@@ -14,5 +17,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface CarMapper extends BaseMapper<Car> {
 
+    List<VCat> selectName();
+
+    public void save(VCat vCat);
 
 }

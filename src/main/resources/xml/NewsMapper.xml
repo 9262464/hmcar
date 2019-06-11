@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bydcar.byd.mapper.NewsMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.hm.hmcar.entity.News">
+		<id column="id" property="id" />
+		<result column="title" property="title" />
+		<result column="img" property="img" />
+		<result column="date" property="date" />
+		<result column="name" property="name" />
+		<result column="source" property="source" />
+		<result column="td" property="tid" />
+		<result column="span1" property="span1" />
+		<result column="span2" property="span2" />
+		<result column="span3" property="span3" />
+		<result column="span4" property="span4" />
+		<result column="span5" property="span5" />
+	</resultMap>
+
+</mapper>
