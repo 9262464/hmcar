@@ -1,9 +1,7 @@
 package com.hm.hmcar.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.hm.hmcar.entity.Car;
-
-import java.util.List;
+import com.hm.hmcar.entity.Cart;
 
 /**
  * <p>
@@ -11,8 +9,8 @@ import java.util.List;
  * </p>
  *
  * @author bing
- * @since 2019-06-06
+ * @since 2019-06-10
  */
-public interface CarService extends IService<Car> {
-
+public interface CartService extends IService<Cart> {
+	
 }

@@ -1,8 +1,7 @@
 package com.hm.hmcar.dao;
 
-import com.hm.hmcar.entity.Car;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-
+import com.hm.hmcar.entity.Cart;
 
 /**
  * <p>
@@ -10,9 +9,9 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author bing
- * @since 2019-06-06
+ * @since 2019-06-10
  */
-public interface CarMapper extends BaseMapper<Car> {
+public interface CartMapper extends BaseMapper<Cart> {
 
 
 }
