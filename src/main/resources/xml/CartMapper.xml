@@ -5,11 +5,7 @@
 	<!-- 通用查询映射结果 -->
 	<resultMap id="BaseResultMap" type="com.hm.hmcar.entity.Cart">
 		<id column="id" property="id" />
-		<result column="content" property="content" />
-		<result column="price" property="price" />
-		<result column="number" property="number" />
-		<result column="subtotal" property="subtotal" />
-		<result column="operation" property="operation" />
+		<result column="cartid" property="cartid" />
 	</resultMap>
 
 </mapper>

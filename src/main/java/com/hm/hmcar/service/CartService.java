@@ -1,7 +1,11 @@
 package com.hm.hmcar.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.hm.hmcar.entity.Car;
 import com.hm.hmcar.entity.Cart;
+import org.apache.ibatis.annotations.Insert;
+
+import java.util.List;
 
 /**
  * <p>
@@ -9,8 +13,13 @@ import com.hm.hmcar.entity.Cart;
  * </p>
  *
  * @author bing
- * @since 2019-06-10
+ * @since 2019-06-12
  */
 public interface CartService extends IService<Cart> {
-	
+
+    List<Car> selectByid(Integer id);
+
+   void add(Integer id);
+
+    void delete(Integer id);
 }

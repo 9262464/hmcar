@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.hm.hmcar.entity.Listcar;
 import com.hm.hmcar.vo.CarVo;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 

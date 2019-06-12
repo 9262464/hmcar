@@ -1,6 +1,5 @@
 package com.hm.hmcar.entity;
 
-
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -14,7 +13,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author bing
- * @since 2019-06-10
+ * @since 2019-06-12
  */
 @TableName("cart")
 public class Cart extends Model<Cart> {
@@ -23,11 +22,7 @@ public class Cart extends Model<Cart> {
 
 	@TableId(value="id", type= IdType.AUTO)
 	private Integer id;
-	private String content;
-	private Integer price;
-	private Integer number;
-	private Integer subtotal;
-	private String operation;
+	private Integer carid;
 
 
 	public Integer getId() {
@@ -38,44 +33,12 @@ public class Cart extends Model<Cart> {
 		this.id = id;
 	}
 
-	public String getContent() {
-		return content;
+	public Integer getCartid() {
+		return carid;
 	}
 
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-	public Integer getPrice() {
-		return price;
-	}
-
-	public void setPrice(Integer price) {
-		this.price = price;
-	}
-
-	public Integer getNumber() {
-		return number;
-	}
-
-	public void setNumber(Integer number) {
-		this.number = number;
-	}
-
-	public Integer getSubtotal() {
-		return subtotal;
-	}
-
-	public void setSubtotal(Integer subtotal) {
-		this.subtotal = subtotal;
-	}
-
-	public String getOperation() {
-		return operation;
-	}
-
-	public void setOperation(String operation) {
-		this.operation = operation;
+	public void setCartid(Integer cartid) {
+		this.carid = cartid;
 	}
 
 	@Override
